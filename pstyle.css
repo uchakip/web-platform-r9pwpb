@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+  }
+  
+  body{
+    background: white;
+  
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 18%;
+    border-bottom: 1px solid rgba(219,219,219,1);
+    background: linear-gradient(to bottom right, #e045ff 0%, #db0be2 20%, #1c1c1c 100%);
+  
+  
+  }
+  
+  header .logo{
+    height: 29px;
+    padding-right:5%;
+    padding-bottom: 8%;
+  }
+  
+  header .logo img{
+    height: 45px;
+    object-fit: contain;
+    
+  }  
+  
+
+  header nav ul{
+    list-style: none;
+    display: flex;
+    padding-left: 8%;
+  }
+  
+  header nav ul li{
+    margin-right: 20px;
+    padding-left: 3%;
+  }
+  
+  header nav ul li a img{
+    width: 32px;
+    height: 29px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  header nav ul li a i{
+    font-size: 22px;
+    color: #db82ec;
+  }
+
+main{
+    font-size: 13px; 
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    padding-bottom: 3rem;
+}
+
+main img{
+    display: block;
+}
+
+.container{
+    max-width: 93.5rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.btn{
+    display: inline-flex;
+    font-size: 15pt;
+    
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    margin-left: 33pt;
+    margin-top: -5pt;
+    cursor: pointer;
+}
+
+
+.btn:hover{
+    outline: 0.5rem auto #e045ff;
+    padding: 3pt;
+}
+
+.profile-settings-btn{
+    display: inline-block;
+    font-size: 15pt;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 5pt;
+    cursor: pointer;
+}
+
+.visually-hidden{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px,1px);
+}
+
+.profile{
+    padding: 5rem 0;
+}
+.profile::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.profile-image{
+    float: left;
+    width: 33.33% - 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.profile-image img{
+    border-radius: 50%;
+    width: 314px;
+    height: 190px;
+    margin-left: 70px;
+    margin-top: -20px;
+}
+
+
+.profile-user-name{
+    font-size: 30pt;
+    width: calc(66.66% - 2rem);
+    display: inline-block;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10rem;
+    margin-left: 3rem;
+    margin-top: -10pt;
+    margin-bottom: 10pt;
+
+}
+
+.profile-bio{
+    margin-left: -78pt;
+    border-left: 1px solid #e045ff;
+    padding-left: 10px;
+    font-size: 13pt;
+    display: block;
+
+}
+
+.profile-stats ul{
+    list-style: none;
+    display: flex;
+}
+.profile-stats ul li{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+}
+.profile-stats{
+    border-bottom: 1px solid #e045ff;
+    font-size: 19px;
+
+}
+
+
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .post {
+    position: relative;
+    margin: 10px;
+  }
+  
+  .post img {
+    display: block;
+    padding-top: 10px;
+    width: 370px;
+    height: 370px;
+    object-fit: cover;
+    
+  }
+
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 370px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+
+  }
+  
+  .overlay-icons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .overlay-icons a {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    transition: transform 0.10s ease;
+  }
+  
+  .overlay-icons a:hover {
+    transform: scale(1.1);
+  }
+  
+  .overlay-comments {
+    flex-grow: 1;
+  }
+  
+  .overlay-comments form {
+    display: flex;
+    margin-top: 200pt;
+  }
+  
+  .overlay-comments form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+  }
+  
+  .overlay-comments form button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  .overlay-comments form button:hover {
+    transform: scale(1.1);
+  }
+
+  
+
+
+
+

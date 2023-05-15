@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flickNfeed Log-In</title>
+	<link rel="icon" type="image/png" href="logo.PNG">
+	<link rel="stylesheet" href="login.css">
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+	<div id="loader"></div>
+	
+	<div style="display:none;" id="myDiv" class="animate-bottom">
+	<div class="box">
+		<form autocomplete="off" action="feed.html">
+			<img id="customlogo" src="icon.png" alt="logo image">
+			<h2>Log In</h2>
+			<div class="inputBox">
+				<input type="text" required="required">
+				<span>Email</span>
+				<i></i>
+			</div>
+			<div class="inputBox">
+				<input type="password" required="required">
+				<span>Password</span>
+				<i></i>
+			</div>
+			<div class="links">
+				<a href="#">Forgot Password?</a>
+			</div>
+			<input type="submit" value="Login">
+			<div class="signup">
+				<p>Don't have an account?</p>
+				<a class="signupcolor" href="signup.html">sign up</a>
+			</div>
+		</form>
+	</div>
+	<script>
+		var myVar;
+		
+		function myFunction() {
+		  myVar = setTimeout(showPage, 3000);
+		}
+		
+		function showPage() {
+		  document.getElementById("loader").style.display = "none";
+		  document.getElementById("myDiv").style.display = "block";
+		}
+		</script>
+</body>
+</html>

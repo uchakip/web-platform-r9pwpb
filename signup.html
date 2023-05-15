@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flickNfeed Sign-Up</title>
+    <link rel="icon" type="image/png" href="logo.PNG">
+
+   
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    
+    <div class="box">
+        <form>
+            <img id="customlogo" src="icon.png" alt="logo image">
+            <h2>Sign Up</h2>
+            <div class="inputBox">
+                <input type="text" name="name" required>
+                <span>Full Name</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="email" name="email" required>
+                <span>Email Address</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" required>
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="confirm_password" required>
+                <span>Confirm Password</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="phone" required>
+                <span>Phone Number</span>
+                <i></i>
+            </div>
+           
+			<div class="inputBox">
+				<label for="gender" class="inputLabel">Gender</label>
+				<select name="gender" id="gender" class="inputField">
+				  <option value="">Select Gender</option>
+				  <option value="male">Male</option>
+				  <option value="female">Female</option>
+				  <option value="other">Other</option>
+				</select>
+				<span class="inputHighlight"></span>
+			  </div>
+            <input type="submit" value="Sign Up">
+            <div class="signup">
+                <p>Already have an account?</p>
+                <a href="login.html" class="signupcolor">Login</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
